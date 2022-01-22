@@ -1,5 +1,5 @@
-// Our first program will print the classic "hello world"
-// message. Here's the full source code.
+// আমাদের প্রথম program classic "hello world" message print করবে।
+// Full source code টি হলো,
 package main
 
 import "fmt"

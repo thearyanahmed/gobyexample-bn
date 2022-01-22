@@ -19,7 +19,7 @@ func main() {
 	fmt.Println(now)
 
 	fmt.Println(now.Unix())
-	fmt.Println(now.UnixMilli())
+	// fmt.Println(now.UnixMilli())
 	fmt.Println(now.UnixNano())
 
 	// You can also convert integer seconds or nanoseconds
