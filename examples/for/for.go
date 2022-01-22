@@ -1,34 +1,30 @@
-// `for` is Go's only looping construct. Here are
-// some basic types of `for` loops.
-
+// `for` GoLang এর একমাত্র loop । এখানে কিছু  উদাহরণ দেয়া হলো ।
 package main
 
 import "fmt"
 
 func main() {
 
-	// The most basic type, with a single condition.
+	// সবথেকে basic, একটি single condition দিয়ে ।
 	i := 1
 	for i <= 3 {
 		fmt.Println(i)
 		i = i + 1
 	}
 
-	// A classic initial/condition/after `for` loop.
+	// একটি classic initial/condition/after `for` loop ।
 	for j := 7; j <= 9; j++ {
 		fmt.Println(j)
 	}
 
-	// `for` without a condition will loop repeatedly
-	// until you `break` out of the loop or `return` from
-	// the enclosing function.
+	// Condition ছাড়া `for` চলতে থাকবে, যতক্ষন না loop থেকে `break` করা হয় বা
+	// enclosing function থেকে `return` করা হয়।
 	for {
 		fmt.Println("loop")
 		break
 	}
 
-	// You can also `continue` to the next iteration of
-	// the loop.
+	// Loop এর পরবর্তি iteration এ যাওয়ার জন্য `continue` (ব্যবহার) করা যায়।
 	for n := 0; n <= 5; n++ {
 		if n%2 == 0 {
 			continue
