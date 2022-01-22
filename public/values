@@ -32,7 +32,7 @@ strings, integers (পূর্ণ সংখ্যা) , floats (ভগ্না
 
           </td>
           <td class="code leading">
-            <a href="http://play.golang.org/p/bOMLztQbF7H"><img title="Run code" src="play.png" class="run" /></a><img title="Copy code" src="clipboard.png" class="copy" />
+            <a href="http://play.golang.org/p/2O5eIwVyAyy"><img title="Run code" src="play.png" class="run" /></a><img title="Copy code" src="clipboard.png" class="copy" />
           <pre class="chroma">
 <span class="kn">package</span> <span class="nx">main</span>
 </pre>
@@ -63,7 +63,7 @@ strings, integers (পূর্ণ সংখ্যা) , floats (ভগ্না
         
         <tr>
           <td class="docs">
-            <p>Strings, which can be added together with <code>+</code>.
+            <p>Strings, which can be added together with <code>+</code> ।
 ২ বা তার বেশি String একসাথে যুক্ত করতে বা জোড়া লাগাতে (সংযুক্ত নয়) <code>+</code> ব্যবহার করা হয়।</p>
 
           </td>

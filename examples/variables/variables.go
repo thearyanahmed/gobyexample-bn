@@ -2,33 +2,34 @@
 // the compiler to e.g. check type-correctness of function
 // calls.
 
+// GoLang এ compiler _variables_ (দের) স্পষ্ট (explicite) ভাবে declare আর use করে ।
+// একটি উদাহরণ হলো function এর type-correctness check করার জন্য ।
+
 package main
 
 import "fmt"
 
 func main() {
 
-	// `var` declares 1 or more variables.
+	// `var` দিয়ে ১ বা একাধিক variable declare করা হয়।
 	var a = "initial"
 	fmt.Println(a)
 
-	// You can declare multiple variables at once.
+	// একবারে একাধিক variable এভাবে declare করা হয়।
 	var b, c int = 1, 2
 	fmt.Println(b, c)
 
-	// Go will infer the type of initialized variables.
+	// Go প্রাথমিক ভেরিয়েবলের ধরন অনুমান করবে ।
 	var d = true
 	fmt.Println(d)
 
-	// Variables declared without a corresponding
-	// initialization are _zero-valued_. For example, the
-	// zero value for an `int` is `0`.
+	// যেসব variable এর declaration সময় কোনো value assign করা হবে না,
+	// সেগুলো _zero-valued_. যেমন, `int` এর zero value হল `0` ।
 	var e int
 	fmt.Println(e)
 
-	// The `:=` syntax is shorthand for declaring and
-	// initializing a variable, e.g. for
-	// `var f string = "apple"` in this case.
+	// `:=` syntax হলো shorthand, একই সাথে variable declare আর initialize করার জন্য ।
+	// যেমন এক্ষেত্রে `var f string = "apple"`
 	f := "apple"
 	fmt.Println(f)
 }
