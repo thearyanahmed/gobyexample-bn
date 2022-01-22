@@ -1,5 +1,4 @@
-// Go supports _constants_ of character, string, boolean,
-// and numeric values.
+// GoLang character, string, boolean আর numeric value'র ধ্রবক (_constants_) support করে ।
 
 package main
 
@@ -8,28 +7,27 @@ import (
 	"math"
 )
 
-// `const` declares a constant value.
+// `const` দিয়ে constant value declare করে ।
 const s string = "constant"
 
 func main() {
 	fmt.Println(s)
 
-	// A `const` statement can appear anywhere a `var`
-	// statement can.
+	// `const` statement সেসব যায়গায় ব্যবহার করা যেতে পারে যেসব যায়গায় `var` ব্যবহার করা যায়।
 	const n = 500000000
 
-	// Constant expressions perform arithmetic with
-	// arbitrary precision.
+	// ধ্রুবক/constant expression নির্ভুলতার সাথে পাটিগণিত
+	// সম্পাদন করে।
 	const d = 3e20 / n
 	fmt.Println(d)
 
-	// A numeric constant has no type until it's given
-	// one, such as by an explicit conversion.
+	// Numeric constant এর কোনো data type থাকে না যতক্ষন না দেয়া হচ্ছে।
+	// যেমন explicite conversion এর মাধ্যমে।
 	fmt.Println(int64(d))
 
-	// A number can be given a type by using it in a
-	// context that requires one, such as a variable
-	// assignment or function call. For example, here
-	// `math.Sin` expects a `float64`.
+	// একটি number কে নির্দিষ্ট context এ ব্যবহার করে একটি টাইপ
+	// দেওয়া যেতে পারে যার জন্য প্রয়োজন, যেমন একটি
+	// অ্যাসাইনমেন্ট বা ফাংশন কল। উদাহরণ স্বরূপ
+	// `math.Sin` except করে `float64`.
 	fmt.Println(math.Sin(n))
 }
