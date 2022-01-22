@@ -149,8 +149,6 @@ multi-dimensional (বহু-মাত্রিক) data structure তৈরি 
         <tr>
           <td class="docs">
             <p>Note that arrays appear in the form <code>[v1 v2 v3 ...]</code>
-Note যখন  <code>[v1 v2 v3 ...]</code>
-when printed with <code>fmt.Println</code>.
 when printed with <code>fmt.Println</code>.</p>
 
           </td>
