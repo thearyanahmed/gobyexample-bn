@@ -6,7 +6,7 @@ import "fmt"
 
 func main() {
 
-	// Strings, which can be added together with `+`.
+	// Strings, which can be added together with `+` ।
 	// ২ বা তার বেশি String একসাথে যুক্ত করতে বা জোড়া লাগাতে (সংযুক্ত নয়) `+` ব্যবহার করা হয়।
 	fmt.Println("go" + "lang")
 
